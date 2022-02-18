@@ -5,4 +5,7 @@
     "start": "parcel",
     "build": "parcel build"
   }
+  "devDependencies": {
+    "parcel": "latest"
+  }
 }
