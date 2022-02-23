@@ -6,6 +6,10 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "latest",
+    "postcss": "^8.4.6",
+    "postcss-import": "^14.0.2",
+    "postcss-media-minmax": "^5.0.0",
+    "postcss-url": "^10.1.3"
   }
 }
