@@ -6,6 +6,7 @@
     "build": "parcel build"
   },
   "devDependencies": {
+    "normalize.css": "latest",
     "parcel": "latest",
     "postcss": "^8.4.6",
     "postcss-import": "^14.0.2",
