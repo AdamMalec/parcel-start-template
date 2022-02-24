@@ -1,0 +1,70 @@
+/* Grid */
+/*
+*  Вспомогательный служебный класс для верстки по модульной сетке в макете
+*  Вешается на тег <body>
+*  Список переменных:
+--grid-side               -- отступы по краям
+--grid-gutter             -- отступы между колонками
+--grid-columns-number     -- количество колонок
+--grid-columns-width      -- ширина колонки (не задается, высчитывается автоматически)
+--grid-color              -- цвет колонки
+
+*  В медиавыражениях вносятся изменения согласно сетке макета по заданной ширине
+*/
+
+._grid::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255 0 0 / 0.1);
+  pointer-events: none;
+
+  --grid-side: 16px;
+  --grid-gutter: 20px;
+  --grid-columns-number: 2;
+  --grid-columns-width: calc(
+      (100% - var(--grid-gutter) * var(--grid-columns-number)) / var(--grid-columns-number)
+  );
+  --grid-color: rgba(255, 0, 0, 0.1);
+
+  border: solid transparent;
+  border-width: 0 calc(
+    var(--grid-side) - var(--grid-gutter) / 2
+  );
+
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0,
+    transparent calc(var(--grid-gutter) / 2),
+    var(--grid-color) calc(var(--grid-gutter) / 2),
+    var(--grid-color) calc(var(--grid-columns-width) + var(--grid-gutter) / 2),
+    transparent calc(var(--grid-columns-width) + var(--grid-gutter) / 2),
+    transparent calc(var(--grid-columns-width) + var(--grid-gutter))
+  );
+
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 767.98px) {
+  ._grid::before {
+    --grid-side: 24px;
+    --grid-columns-number: 4;
+  }
+}
+
+@media (min-width: 991.98px) {
+  ._grid::before {
+    --grid-side: 24px;
+    --grid-columns-number: 6;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  ._grid::before {
+    --grid-side: 24px;
+    --grid-columns-number: 12;
+  }
+}
