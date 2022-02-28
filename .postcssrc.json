@@ -1,0 +1,7 @@
+{
+  "plugins": {
+    "postcss-import": true,
+    "postcss-media-minmax": true,
+    "postcss-url": true
+  }
+}
