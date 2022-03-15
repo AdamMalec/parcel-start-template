@@ -23,7 +23,7 @@
   background-color: rgb(255 0 0 / 0.1);
   pointer-events: none;
 
-  --grid-side: 16px;
+  --grid-side: 12px;
   --grid-gutter: 20px;
   --grid-columns-number: 2;
   --grid-columns-width: calc(
@@ -49,23 +49,23 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: 767.98px) {
+@media (width >= 480px) {
   ._grid::before {
-    --grid-side: 24px;
+    --grid-side: 18px;
     --grid-columns-number: 4;
   }
 }
 
-@media (min-width: 991.98px) {
+@media (width >= 992px) {
   ._grid::before {
-    --grid-side: 24px;
+    --grid-side: 32px;
     --grid-columns-number: 6;
   }
 }
 
-@media (min-width: 1199.98px) {
+@media (width >= 1280px) {
   ._grid::before {
-    --grid-side: 24px;
+    --grid-side: 64px;
     --grid-columns-number: 12;
   }
 }
