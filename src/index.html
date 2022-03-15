@@ -1,46 +1,85 @@
 <!doctype html>
 <html lang="en">
-  <head>
 
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-    <title>My First Parcel App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="A Basic Parcel App for new projects.">
-    <meta name="author" content="Adam Malec">
+  <title>Started Parcel Template</title>
 
-    <meta property="og:title" content="A Basic Parcel Template">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A Basic Parcel App for new projects.">
-    <meta property="og:image" content="image.png">
+  <meta name="description" content="A Basic Parcel App for new projects.">
+  <meta name="author" content="Adam Malec">
+
+  <meta property="og:title" content="A Basic Parcel Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A Basic Parcel App for new projects.">
+  <meta property="og:image" content="image.jpg">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <nav>
-        <ul>
-          <li>item-1</li>
-          <li>item-2</li>
-          <li>item-3</li>
-        </ul>
-      </nav>
-    </header>
+  <!-- header begin  -->
+  <header class="header">
+    <div class="header__container">
 
-    <main>
+      <a href="" class="header__logo">
+        <img src="img/logo.svg" alt="company logotype">
+      </a>
+
+      <div class="header__menu menu">
+
+        <button
+          class="button menu__icon"
+          aria-label="menu"
+          aria-expanded="false">
+
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="menu__body" aria-label="site navigation">
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/item-1" class="menu__link">item-1</a>
+            </li>
+            <li class="menu__item">
+              <a href="/item-2" class="menu__link">item-2</a>
+            </li>
+            <li class="menu__item">
+              <a href="/item-3" class="menu__link">item-3</a>
+            </li>
+            <li class="menu__item">
+              <a href="/item-4" class="menu__link">item-4</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+    </div>
+  </header>
+  <!--header end  -->
+
+  <main>
+    <section class="section__container">
       <h1>Hello, World, dude!</h1>
       <p>Lorem, ipsum it's what you hate.</p>
-    </main>
+    </section>
+  </main>
 
-    <script type="module" src="js/main.js"></script>
-  </body>
+  <script type="module" src="js/main.js"></script>
+</body>
+
 </html>
