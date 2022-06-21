@@ -3,6 +3,9 @@
   --font-size: 18px;
 
   --color-brand: dodgerblue;
+  --color-brand-hover: dodgerblue;
+  --color-brand-focus: dodgerblue;
+  --color-brand-active: dodgerblue;
   --color-accent: hotpink;
   --color-white: whitesmoke;
   --color-black: black;
