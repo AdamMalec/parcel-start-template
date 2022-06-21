@@ -24,7 +24,7 @@
 }
 
 /*    Mobile menu   ↙ */
-@media screen and (width <= 768px) {
+@media screen and (--mobile-width) {
   .menu__body {
     position: fixed;
     top: 80px;
