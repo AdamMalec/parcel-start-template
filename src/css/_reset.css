@@ -17,7 +17,7 @@ input, button, textarea, select {
   font: inherit;
 }
 
-.button {
+button {
   padding: 0;
   border: none;
   background-color: transparent;
