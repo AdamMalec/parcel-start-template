@@ -13,9 +13,10 @@ audio {
   height: auto;
 }
 
+/* Отключено. Есть в normalize.css  ↙
 input, button, textarea, select {
-  font: inherit;
-}
+font: inherit;
+} */
 
 button {
   padding: 0;
